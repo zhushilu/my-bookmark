@@ -1,9 +1,6 @@
 # 在线书签管理工具
-![image](https://github.com/luchenqun/my-bookmark/blob/master/public/images/screenshot.png)   
 
-1 在线体验(demo)
--------------
-[在线书签管理系统](http://mybookmark.cn/ "在线书签管理系统")，体验账号：test。密码：123456。
+- 该分支为自用分支，在作者基础上做过一些修改
 
 2 为什么要做个网络书签
 ------------------
