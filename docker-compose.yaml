@@ -1,0 +1,16 @@
+version: '2'
+services:
+  node:
+    image: node:8
+    container_name: bookmark
+#    ports:
+#      - "2000:2000"
+    network_mode: "host"
+    volumes:
+      - /data/bookmark:/opt/bookmark
+    working_dir: /opt/bookmark
+    command: [node, bin/www]
+    restart: always
+#    links:
+#      - mysql
+

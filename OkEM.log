@@ -1,0 +1,59 @@
+getBookmarks SELECT id, snap_state FROM `bookmarks`
+getSnapByTimer...........
+getFaviconByTimer...........
+getHotBookmarks........... 2017-08-24 10:18:25
+./uploadsis exists!
+./public/images/snapis exists!
+updateBookmarkSnapState id = 231, snapState = -1
+updateBookmarkSnapState id = 230, snapState = -1
+tags username =  zhusl
+getTags
+[0mGET /api/tags/ [36m304 [0m226.839 ms - -[0m
+bookmarksByTag username =  zhusl
+getTagsBookmarks SELECT * FROM `tags_bookmarks` WHERE bookmark_id in(6,218,204,9,218,204,9,6,218,6,204,9)
+getTags
+[0mGET /api/bookmarksByTag/?currentPage=1&perPageItems=50&tagId=3 [36m304 [0m14.818 ms - -[0m
+bookmarksByTag username =  zhusl
+getTagsBookmarks SELECT * FROM `tags_bookmarks` WHERE bookmark_id in(199,200,1,13,197,102,243,139,4,239,215,144,230,224,222,105,114,117,107,3,5,243,239,230,224,222,215,200,199,139,144,197,102,105,114,117,107,13,4,3,5,1,243,199,13,200,1,239,197,230,224,139,222,144,215,4,102,105,117,107,114,3,5)
+getTags
+[0mGET /api/bookmarksByTag/?currentPage=1&perPageItems=50&tagId=1 [36m304 [0m14.349 ms - -[0m
+updateBookmarkSnapState id = 229, snapState = -1
+autoLogin username =  zhusl
+getUser
+updateUserLastLogin
+[0mGET /api/autoLogin/ [32m200 [0m4.795 ms - 653[0m
+getNotes username =  zhusl
+SELECT notes.id, notes.content, notes.tag_id, DATE_FORMAT(notes.created_at, '%Y-%m-%d %H:%i:%s') as created_at, tags.name FROM `notes` LEFT JOIN tags ON  tags.id = notes.tag_id  WHERE notes.user_id = '1' ORDER BY `created_at` DESC
+[0mGET /api/notes/?currentPage=1&perPageItems=35 [36m304 [0m5.006 ms - -[0m
+tags username =  zhusl
+getTags
+[0mGET /api/tags/ [36m304 [0m4.827 ms - -[0m
+bookmarksByTag username =  zhusl
+getTagsBookmarks SELECT * FROM `tags_bookmarks` WHERE bookmark_id in(6,218,204,9,218,204,9,6,218,6,204,9)
+getTags
+[0mGET /api/bookmarksByTag/?currentPage=1&perPageItems=50&tagId=3 [36m304 [0m8.023 ms - -[0m
+bookmarksByTag username =  zhusl
+getTagsBookmarks SELECT * FROM `tags_bookmarks` WHERE bookmark_id in(199,200,1,13,197,102,243,139,4,239,215,144,230,224,222,105,114,117,107,3,5,243,239,230,224,222,215,200,199,139,144,197,102,105,114,117,107,13,4,3,5,1,243,199,13,200,1,239,197,230,224,139,222,144,215,4,102,105,117,107,114,3,5)
+getTags
+[0mGET /api/bookmarksByTag/?currentPage=1&perPageItems=50&tagId=1 [36m304 [0m12.659 ms - -[0m
+getArticle username =  zhusl
+clickBookmark username =  zhusl
+[0mPOST /api/clickBookmark/ [32m200 [0m62.663 ms - 2[0m
+[0mPOST /api/getArticle/ [32m200 [0m1553.967 ms - 549[0m
+updateBookmarkSnapState id = 228, snapState = -1
+updateBookmarkSnapState id = 227, snapState = -1
+tags username =  zhusl
+getTags
+[0mGET /api/tags/ [36m304 [0m9.061 ms - -[0m
+getArticle username =  zhusl
+[0mPOST /api/getArticle/ [32m200 [0m820.722 ms - 51[0m
+addBookmark username =  zhusl
+INSERT INTO `bookmarks` (`user_id`, `title`, `description`, `url`, `public`, `click_count`) VALUES ('1', '【58同城 58.com】北京分类信息', '', 'http://bj.58.com/', '0', '1')
+[0mPOST /api/addBookmark/ [32m200 [0m28.509 ms - 268[0m
+updateBookmarkFaviconState id = 244, faviconState = -1
+updateBookmarkSnapState id = 244, snapState = -1
+updateBookmarkSnapState id = 225, snapState = -1
+updateBookmarkSnapState id = 224, snapState = -1
+updateBookmarkSnapState id = 222, snapState = -1
+updateBookmarkSnapState id = 221, snapState = -1
+error: Forever detected script was killed by signal: SIGKILL
